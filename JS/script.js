@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.jsdelivr.net/vivus/0.2.1/vivus.min.js"></script>
 new Vivus('Mysvg', {
     type: "oneByOne",
     delay: 0,
