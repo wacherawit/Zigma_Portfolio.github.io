@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
+*{
+    font-family: 'Mitr', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #082032;
+}
+#Mysvg {
+    width: 70%;
+    height: 70%;
+}
+#Mysvg path {
+    stroke: #EEE6CE;
+    fill: #EEE6CE;
+    stroke-width: 3px;
+    stroke-linecap: round;
+    fill-opacity: 0;
+    animation: draw 9s forwards;
+    animation-iteration-count: 1;
+    transition: fill-opacity 1s ease;
+}
+#Mysvg.finished * {
+    fill-opacity: 1;
+    transition: all 1s ease;
+}
+#Loading{
+    position: fixed;
+    background-color: #082032;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease;
+}
+#Loading.Fadeout * {
+    animation: Fade 2s forwards;
+    animation-delay: 1s;
+}
+@keyframes Fade{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+}
+}
+.Nav-bar{
+    width: 100%;
+    height: max-content;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-name{
+    padding: 10px 70px;
+    width: max-content;
+    color: #EEE6CE;
+    font-size: 2.5rem;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 500;
+    border-right: 1px solid #333;
+}
+.nav-Des{
+    display: flex;
+    align-items: center;
+    padding: 10px 70px;
+    width: max-content;
+    color: #999;
+    font-size: 1.5rem;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 500;
+}
+.nav-Resume{
+    display: flex;
+    align-items: center;
+    background-color: #FEDB39;
+    padding: 10px 40px;
+    width: max-content;
+    color: #082032;
+    font-size: 1.5rem;
+    font-family: 'Mitr', sans-serif;
+    font-weight: 500;
+    border-left: 1px solid #333;
+}
+.nav-Resume a{
+    text-decoration: none;
+    color: #082032;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Mitr', sans-serif;
+}
+.Top{
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Heading-text{
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.Collection{
+    padding: 5%;
+}
+.CL-con{
+    position: relative;
+}
+.CL-head{
+    z-index: 10;
+    margin-bottom: 2%;
+    color: #EEE6CE;
+    font-size: 2.5rem;
+}
+.CL-list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.CL-card{
+    padding: 0 20px;
+    width: 33.33%;
+    height: auto;
+}
+.CL-card a{
+    text-decoration: none;
+}
+.CL-card:hover .CL-card-img img{
+    transform: scale(110%);
+}
+.CL-card-text{
+    margin-left: 2%;
+    font-size: 20px;
+    color: white;
+}
+.CL-card-img{
+    border: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 3%;
+    height: 80%;
+}
+.CL-card-img img{
+    width: 100%;
+    height: 100%;
+    transition:all .5s;
+}
+.Footer-con{
+    border-top: 1px solid #333;
+    border-bottom: 10px solid #C84B31;
+    display: flex;
+    justify-content: space-between;
+}
+.CT-head{
+    color: white;
+    font-size: 2.5rem;
+}
+.contact{
+    margin: 3% 5%;
+    display: flex;
+    flex-direction: column;
+}
+.contact a{
+    text-decoration: none;
+    color: #999;
+    font-size: 2rem;
+}
+.CopyR{
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 5%;
+}
