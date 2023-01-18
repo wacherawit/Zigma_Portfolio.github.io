@@ -10,6 +10,5 @@ new Vivus('Mysvg', {
         setTimeout(function(){
             document.getElementById('Loading').style.display = 'none';
           }, 3000);
-        
     }
 );
