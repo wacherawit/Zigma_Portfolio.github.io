@@ -1,9 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap');
 *{
     font-family: 'Mitr', sans-serif;
-}
-html{
     scroll-behavior: smooth;
 }
 body{
@@ -96,14 +95,60 @@ body{
     font-size: 1.5rem;
     font-family: 'Mitr', sans-serif;
 }
+.AB-box{
+    display: flex;
+    padding: 2% 5%;
+    margin-bottom: 15%;
+}
+.AB-text{
+    width: 70%;
+    padding: 2%;
+}
+.AB-head{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.AB-head svg{
+    width: auto;
+}
+.AB-info{
+    padding-top: 2%;
+    color: white;
+    font-size: 3rem;
+}
+.AB-img{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.AB-img img{
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+}
 .Top{
     padding-top: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.Under-nav{
+    animation: open 6s forwards;
+    animation-delay: 6s;
+}
+@keyframes open{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+}
+}
 .Top svg{
     width: 80%;
+    height: 120px;
 }
 .Heading-text{
     color: white;
@@ -139,6 +184,7 @@ body{
     transform: scale(110%);
 }
 .CL-card-text{
+    font-family: 'Roboto Mono', monospace;
     margin-left: 2%;
     font-size: 20px;
     color: white;
@@ -190,6 +236,12 @@ body{
 }
 }
 @media screen and (max-width: 940px){
+    .AB-head svg{
+        width: 70%;
+    }
+    .AB-info{
+        font-size: 2rem;
+    }
     .Top svg{
         width: 60%;
     }
@@ -212,6 +264,12 @@ body{
     }
 }
 @media screen and (max-width: 600px){
+    .AB-box{
+        margin-bottom: 5%;
+    }
+    .AB-info{
+        font-size: 1rem;
+    }
     .Top svg{
         width: 60%;
     }
@@ -246,6 +304,29 @@ body{
     }
 }
 @media screen and (max-width: 400px){
+    .AB-text{
+        padding: 2% 4%;
+    }
+    .AB-head svg{
+        width: 90%;
+    }
+    .AB-info{
+        font-size: 13px;
+    }
+    .AB-img{
+        justify-content: flex-end;
+        padding-bottom: 5%;
+    }
+    .nav-name{
+        padding: 5px 40px;
+        font-size: 1.5rem;
+    }
+    .nav-Resume{
+        padding: 5px 20px;
+    }
+    .nav-Resume a{
+        font-size: 1rem;
+    }
     .CL-card{
         padding: 20px 0px;
         width: 100%;
