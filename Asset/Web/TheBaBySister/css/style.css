@@ -41,6 +41,7 @@ body{
     width: 30%;
 }
 .text{
+    height: max-content;
     padding-left: 2%;
     color: white;
     font-size: 2rem;
@@ -60,4 +61,14 @@ body{
 .Game-con-right img{
     width: 100%;
     padding: 20px;
+}
+@media screen and (max-width: 940px){
+    .text{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .text{
+        font-size: 0.8rem;
+    }
 }

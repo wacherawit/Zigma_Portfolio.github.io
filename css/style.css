@@ -8,6 +8,19 @@
 body{
     background-color: #082032;
 }
+#Under-nav.Open * {
+    opacity: 0;
+    animation: open 3s forwards;
+    animation-delay: 2.5s;
+}
+@keyframes open{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+}
+}
 #Mysvg {
     width: 70%;
     height: 70%;
@@ -133,18 +146,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.Under-nav{
-    animation: open 6s forwards;
-    animation-delay: 6s;
-}
-@keyframes open{
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-}
 }
 .Top svg{
     width: 80%;
@@ -336,5 +337,8 @@ body{
     }
     .CL-head{
         font-size: 20px;
+    }
+    .CopyR{
+        font-size: 5px;
     }
 }
