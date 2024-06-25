@@ -128,7 +128,7 @@ body{
 .AB-info{
     padding-top: 2%;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .AB-img{
     width: 30%;
@@ -202,11 +202,20 @@ body{
     height: 100%;
     transition:all .5s;
 }
+.Edubox{
+    display: flex;
+    justify-content: space-between;
+}
+.E_Head{
+    color: white;
+    font-size: 2.5rem;
+    padding: 5%;
+}
 .Footer-con{
     border-top: 1px solid #333;
     border-bottom: 10px solid #C84B31;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around
 }
 .CT-head{
     color: white;
