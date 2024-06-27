@@ -108,19 +108,23 @@ body{
     font-size: 1.5rem;
     font-family: 'Mitr', sans-serif;
 }
+.Link a{
+    color: #EEE6CE;
+    padding: 5%;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
 .AB-box{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 2% 5%;
-    margin-bottom: 15%;
-}
-.AB-text{
-    width: 70%;
-    padding: 2%;
+    margin-bottom: 10%;
 }
 .AB-head{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    padding: 3%;
+    width: auto;
 }
 .AB-head svg{
     width: auto;
@@ -137,7 +141,7 @@ body{
     flex-direction: column;
 }
 .AB-img img{
-    border-radius: 20px;
+    border-radius: 100%;
     width: 100%;
     height: auto;
 }
@@ -170,12 +174,14 @@ body{
 .CL-list{
     width: 100%;
     height: auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 3vw 1.5vw;
 }
 .CL-card{
-    padding: 0 20px;
-    width: 33.33%;
+    padding: 10px 20px;
+    width: 100%;
     height: auto;
 }
 .CL-card a{
@@ -204,12 +210,40 @@ body{
 }
 .Edubox{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .E_Head{
     color: white;
     font-size: 2.5rem;
     padding: 5%;
+}
+.E_info{
+    padding: 0;
+}
+.E-img{
+    width: 50%;
+    height: 100%;
+}
+.E-img img{
+    width: 100px;
+    height: auto;
+}
+.E_info-head-text-head{
+    color: #FF8800;
+    font-size: 1.5rem;
+}
+.E_info li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    margin: 3%;
+    padding: 5%;
+    list-style: none;
+    background-color: #333;
+    text-align: center;
+    border-radius: 50px;
 }
 .Footer-con{
     border-top: 1px solid #333;
@@ -247,10 +281,7 @@ body{
 }
 @media screen and (max-width: 940px){
     .AB-head svg{
-        width: 70%;
-    }
-    .AB-info{
-        font-size: 2rem;
+        width: auto;
     }
     .Top svg{
         width: 60%;
@@ -274,6 +305,9 @@ body{
     }
 }
 @media screen and (max-width: 600px){
+    .AB-head svg{
+        width: 100%;
+    }
     .AB-box{
         margin-bottom: 5%;
     }
@@ -297,12 +331,18 @@ body{
         font-size: 15px;
     }
     .CL-card{
-        padding: 20px 20px;
-        width: 50%;
+        padding: 10px 10px;
     }
     .CT-head{
         color: white;
         font-size: 20px;
+    }
+    .E_info-head-text-head{
+        color: #FF8800;
+        font-size: 1rem;
+    }
+    .E_info li{
+        font-size: 0.75rem;
     }
     .contact a{
         text-decoration: none;
@@ -337,15 +377,29 @@ body{
     .nav-Resume a{
         font-size: 1rem;
     }
-    .CL-card{
-        padding: 20px 0px;
+    .CL-list{
         width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+        gap: 3vw 1.5vw;
     }
     .Top svg{
         width: 80%;
     }
     .CL-head{
         font-size: 20px;
+    }
+    .E_Head{
+        font-size: 1rem;
+    }
+    .E_info-head-text-head{
+        color: #FF8800;
+        font-size: 0.75rem;
+    }
+    .E_info li{
+        font-size: 0.5rem;
     }
     .CopyR{
         font-size: 5px;
